@@ -1,0 +1,30 @@
+.mdc-layout-grid {
+  text-align: center;
+  font-family: "Comic Sans MS", "Comic Sans";
+}
+
+.mdc-button {
+  text-transform: none !important;
+}
+
+img {
+  max-width: 200px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+button {
+  min-height: 56px;
+  border-radius: 4px;
+  font-size: 2rem;
+  padding: 24px;
+  font-family: "Comic Sans MS", "Comic Sans";
+  margin-bottom: 24px;
+}
+
+button:hover {
+  cursor: pointer;
+}
