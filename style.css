@@ -1,6 +1,6 @@
-.mdc-layout-grid {
+.mdc-typography {
   text-align: center;
-  font-family: "Comic Sans MS", "Comic Sans";
+  font-family: "Comic Sans MS", "Comic Sans", 'Pacifico', cursive;
 }
 
 .mdc-button {
@@ -21,7 +21,7 @@ button {
   border-radius: 4px;
   font-size: 2rem;
   padding: 24px;
-  font-family: "Comic Sans MS", "Comic Sans";
+  font-family: inherit;
   margin-bottom: 24px;
 }
 
