@@ -1,0 +1,56 @@
+---
+layout: portfolio
+title: Work
+description: 'Cool stuff people pay me to do'
+---
+
+<!-- Portfolio -->
+<section id="portfolio" class="hero-2 background-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col col-10 col-d-12">
+        <div class="hero__inner">
+            <h1 class="hero__title">Portfolio</h1>
+            <p class="hero__description">{{ page.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio__gallery animate">
+    <div class="container">
+      <div class="row">
+        {% for card in site.data.settings.portfolio.portfolio__gallery %}
+          {% include card.html %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% include banner.html %}
+</section>
+<!-- /Portfolio -->
+
+<!-- Projects -->
+<section id="projects" class="hero-3 background-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col col-10 col-d-12">
+        <div class="hero__inner">
+            <h1 class="hero__title">Projects</h1>
+            <p class="hero__description">Stuff I don't get paid for</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio__gallery animate">
+    <div class="container">
+      <div class="row">
+        {% for card in site.data.settings.projects.project__list %}
+          {% include card.html %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- /Projects -->

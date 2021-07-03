@@ -1,0 +1,71 @@
+---
+layout: default-back
+---
+
+<div class="container margin-top pr-xs-0">
+  <div class="row page">
+    <div class="col-12">
+      <div class="page__info">
+        <h1 class="page__title pr-xs-1">{{ page.title | escape }}</h1>
+        <p class="page__description pr-xs-1">{{ page.description }}</p>
+        <div class="flex page__client-tags">
+          {% if page.client %}
+          <div class="page__client">
+            <!-- <span>Client</span> -->
+            <img src="{{ page.client-logo }}">
+            <span style="color: var(--medium-gray)">|</span>
+          </div>
+          {% endif %}
+          {% if page.tags.size >= 1 %}
+          <div class="post__tags">
+            {% for tag in page.tags %}
+              <!-- <a href="{{ site.baseurl }}/tags#{{ tag }}" class="post__tag">{{ tag }}</a> -->
+              <a class="post__tag">{{ tag }}</a>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- begin page -->
+
+{% if page.image %}
+<div class="page-image">
+  <img src="{{site.baseurl}}{{page.image}}" alt="{{page.title}}">
+</div>
+{% endif %}
+
+<div class="container animate serif page">
+
+  <article class="page">
+    <div class="page__content margin-bottom">
+      {{ content }}
+    </div>
+  </article>
+
+  <!-- <hr> -->
+
+</div>
+
+<!-- end page -->
+
+<!-- Related posts (WIP) -->
+<!-- <div class="container margin-top margin-bottom">
+  <div class="row page">
+    <div class="col-12">
+      <h3>Keep reading</h3>
+      <div class="flex">
+        {% for card in site.data.settings.portfolio.portfolio__gallery limit:2 %}
+          {% if card.url != page.url %} 
+            {% include card.html %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<hr>

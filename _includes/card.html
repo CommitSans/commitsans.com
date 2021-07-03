@@ -1,0 +1,44 @@
+<div class="article card col col-4 col-d-4 col-t-12">
+
+    <div class="article__inner">
+
+      <div class="article__head">
+        {% if card.image %}
+        <a class="article__image" href="{{card.url | prepend: site.baseurl}}">
+          <img class="lazy" data-src="{{site.baseurl}}{{card.image}}" alt="{{card.title}}">
+        </a>
+        {% endif %}
+      </div>
+
+      <a href="{{card.url | prepend: site.baseurl}}">
+        <div class="article__content">
+
+          <h2 class="article__title">
+            <span href="">{{ card.title }}</span>
+          </h2>
+
+          <p class="article__excerpt">{% if card.description %}{{ card.description }}{% else %}{{ card.content | strip_html | truncate: 80 }}{% endif %}</p>
+
+          {% if card.client %}
+          <p class="article__excerpt" style="margin-top: 12px;"><strong>Client:</strong> {{ card.client }}{% else %}{{ card.content | strip_html | truncate: 80 }}</p>
+          {% endif %}
+
+          {% if card.tags %}
+          <div class="tag">#{{ card.tags }}</div>
+          {% endif %}
+
+          {% if card.cta %}
+          <div class="flex">
+            <!-- {% if card.cta %}
+            <a class="button button--primary">{{ card.cta }}</a>
+            {% endif %} -->
+
+            {% if card.cta-2 %}
+            <a class="button button--outline" href="mailto:ivo@commitsans.com">{{ card.cta-2 }}</a>
+            {% endif %}
+          </div>
+          {% endif %}
+        </div>
+      </a>
+    </div>
+</div>

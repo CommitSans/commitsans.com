@@ -1,0 +1,26 @@
+---
+layout: default
+title: Now
+description: 'Its happening! Stuff that Im involved in right now'
+---
+
+<!-- begin hero -->
+<section class="hero-2">
+  <div class="container">
+    <div class="row">
+      <div class="col col-10 col-d-12">
+        <div class="hero__inner">
+          {% if page.title %}
+            <h1 class="hero__title">{{ page.title }}</h1>
+          {% endif %}
+          {% if page.description %}
+            <p class="hero__description">{{ page.description }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end hero -->
+
+{% include now.html %}

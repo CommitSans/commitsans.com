@@ -1,0 +1,374 @@
+/* Header */
+.header {
+
+  height: 72px;
+
+  @media only screen and (min-width: $tablet) {
+    // max-height: 64px;
+    padding: 0px 16px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+}
+
+
+.header, .header-blog {
+  background-color: #fafafa;
+  border-bottom: 1px solid #e0e0e0;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+
+  .header__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    // padding: $base-spacing-unit;
+    justify-content: space-between;
+  
+    @media only screen and (max-width: $tablet) {
+      // padding: 40px $base-spacing-unit;
+      text-align: center;
+    }
+
+  }
+}
+
+.header-blog, .hero-blog {
+  border-bottom: 1px solid #afc680;
+  background-color: #c5e38a;
+}
+
+/* Logo */
+.logo {
+  a {
+    :hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.logo__link {
+  // padding: 4px 0;
+  font-family: $heading-font-family;
+  // font-size: 36px;
+  font-size: $heading-font-size * 1.250;
+  letter-spacing: -1px;
+  // line-height: 1;
+  font-weight: 700;
+  transition: none;
+
+  &:hover {
+    color: var(--heading-font-color);
+  }
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 32px;
+  }
+}
+
+.logo__image {
+  max-height: 50px;
+}
+
+/* Nav */
+.main-nav {
+  margin-left: auto;
+}
+
+.main-nav__box {
+  display: flex;
+  align-items: center;
+
+  .nav__icon-close {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+    line-height: 1;
+    border-radius: 50%;
+    color: var(--heading-font-color);
+    background: var(--background-alt-color);
+    cursor: pointer;
+
+    &:hover {
+      .ion-md-close {
+        transform: rotate(90deg);
+      }
+    }
+
+    .ion-md-close {
+      transition: $global-transition;
+    }
+  }
+
+  .nav__title {
+    display: none;
+  }
+
+  @media only screen and (max-width: $desktop) {
+    display: block;
+    align-items: center;
+    width: 80%;
+    height: 80vh;
+    padding-top: 180px;
+    margin: 0 auto;
+    text-align: center;
+    overflow-y: auto;
+
+    .nav__icon-close {
+      display: flex;
+      position: absolute;
+      top: 40px;
+      right: 40px;
+    }
+
+    .nav__title {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-family: $heading-font-family;
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: -1px;
+      color: var(--heading-font-color);
+    }
+  }
+
+  @media only screen and (max-width: $tablet - 1) {
+    padding-top: 100px;
+  }
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+
+  .nav__item {
+    display: flex;
+    margin-right: 48px;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .nav__link {
+      position: relative;
+      padding: 4px 0;
+      font-size: 16px;
+      line-height: 1;
+      font-weight: 700;
+      transition: none;
+
+      &.nav__link--current {
+        &::after {
+          transform: scaleX(1);
+          transition: none;
+          background: var(--brand-color);
+        }
+      }
+
+      &:hover {
+        color: var(--link-color);
+
+        &::after {
+          transform: scaleX(1);
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 2px;
+        transform-origin: center;
+        transform: scaleX(0);
+        will-change: transform;
+        transition: all 0.25s;
+        background: var(--link-color);
+      }
+    }
+  }
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  font-size: 21px;
+  color: var(--link-color);
+  cursor: pointer;
+
+  .nav__icon {
+    transition: $global-transition;
+  }
+
+  .nav__icon-menu {
+    display: none;
+  }
+
+  @media only screen and (max-width: $desktop) {
+    margin-left: auto;
+    font-size: 26px;
+
+    .nav__icon-menu {
+      display: block;
+    }
+  }
+}
+
+/* Toggle Theme */
+.toggle-theme {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  user-select: none;
+  cursor: pointer;
+
+  @media only screen and (max-width: $desktop) {
+    padding: 20px 0;
+  }
+}
+
+.toggle-sun,
+.toggle-moon {
+  position: absolute;
+  font-size: 20px;
+  color: var(--heading-font-color);
+  transition: $global-transition;
+}
+
+.toggle-sun {
+  display: none;
+}
+
+.dark-mode {
+  .toggle-sun {
+    display: block;
+  }
+
+  .toggle-moon {
+    display: none;
+  }
+}
+
+// mobile nav
+@media only screen and (max-width: $tablet) {
+
+  :after {
+    display: none;
+  }
+
+  .main-nav {
+    position: fixed;
+    // height: 56px;
+    background: var(--light-gray);
+    z-index: 4;
+    left: 0;
+    border-top: 1px solid #e0e0e0;
+    opacity: 1;
+    visibility: visible;
+    top: auto;
+    padding: 0 16px;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .main-nav .nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    height: 56px;
+    width: 100%;
+  }
+
+  .nav__list .nav__item {
+    margin: 0px;
+    width: 25%;
+  }
+
+  .main-nav .nav__list .nav__item .nav__link {
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .main-nav .nav__list .nav__item .nav__link.nav__link--current {
+    color: var(--brand-color);
+    background: #e0e0e0;
+    border-radius: 16px;
+  }
+
+}
+
+.nav-cta {
+
+  a:hover {
+    background-color: var(--medium-gray);
+  }
+
+  .button {
+    @media only screen and (min-width: $tablet) {
+      margin-left: 48px;
+    }
+  }
+
+  @media only screen and (min-width: $tablet + 1) and (max-width: $desktop) {
+    display: none;
+  }
+  
+}
+
+.tabs {
+  background-color: #fafafa;
+  border-bottom: 1px solid #e0e0e0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  min-height: 40px;
+  align-items: center;
+  top: 64px;
+
+  // @media screen and (max-width: $mobile) {
+  //   display: flex;
+  // }
+
+  .tab {
+    border-right: 1px solid var(--gray);
+    padding: 0px 16px;
+    margin-bottom: 0px;
+    margin: 12px 0;
+
+    :hover {
+      opacity: .56;
+    }
+
+  }
+
+  .tab:last-child {
+    border-right: none;
+  }
+
+  a {
+    font-size: 20px;
+  }
+
+}

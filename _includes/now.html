@@ -1,0 +1,11 @@
+<div class="section portfolio__gallery animate now">
+    <div class="container">
+        <div class="row">
+          {% for news in site.data.settings.now.now__content %}
+            {% include article-now.html %}
+          {% endfor %}
+        </div>
+        <hr style="margin-top: 32px;">
+      </div>
+    </div>
+</div>

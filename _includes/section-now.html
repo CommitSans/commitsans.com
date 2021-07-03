@@ -1,0 +1,32 @@
+<!-- begin now -->
+<section class="section">
+
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <div class="section__info">
+            <div class="section__head">
+              <span class="section-head">
+                <h2 class="section__title">Now</h2>
+                <a class="section__link" href="{{ '/now' | relative_url }}">View more</a>
+              </span>
+              <p class="section__subtitle">Stuff I'm involved in right now</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio__gallery">
+      <div class="container">
+        <div class="row">
+          {% for news in site.data.settings.now.now__content limit:3 %}
+            {% include article-now.html %}
+          {% endfor %}
+        </div>
+        <hr style="margin-top: 56px;">
+      </div>
+    </div>
+
+</section>
+<!-- end now -->

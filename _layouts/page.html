@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<div class="container margin-top">
+  <div class="row page text-center">
+    <div class="col col-12">
+      <div class="page__info">
+        <h1 class="page__title">{{ page.title | escape }}</h1>
+        <p class="page__description">{{ page.description }}</p>
+        {% if page.tags.size >= 1 %}
+          <div class="post__tags">
+            <!-- <span style="margin-right: 8px;">I did</span> -->
+            {% for tag in page.tags %}
+              <a href="{{ site.baseurl }}/tags#{{ tag }}" class="post__tag">{{ tag }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- begin page -->
+
+{% if page.image %}
+<div class="page-image">
+  <img src="{{site.baseurl}}{{page.image}}" alt="{{page.title}}">
+</div>
+{% endif %}
+
+<div class="container animate serif page">
+
+  <article class="page">
+    <div class="page__content margin-bottom">
+      {{ content }}
+    </div>
+  </article>
+
+</div>
+<!-- end page -->
+
+<hr>

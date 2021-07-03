@@ -1,0 +1,148 @@
+#-------------------------------
+# Site Settings
+title: Commit Sans
+logo: # You can add own logo. For example '/images/logo.png'.
+author: Commit Sans
+description: Diseño y cosas wapas
+
+
+#-------------------------------
+# Menu Settings
+menu__settings:
+  menu__items:
+    - title: 'Home'
+      url: '/'
+    - title: 'Now'
+      url: '/now/'
+    - title: 'Work'
+      url: '/work/'
+    # - title: 'Blog'
+    #   url: '/blog/'
+    - title: 'About'
+      url: '/about/'
+
+
+#-------------------------------
+# Hero Settings
+hero:
+  hero__title: Diseño y desarrollo integral de productos digitales
+  hero__description: Diseñamos y desarrollamos webs, apps para iOs y Android, PWAs y landing pages.
+
+
+#-------------------------------
+# Portfolio Settings
+portfolio:
+  portfolio__title: Work
+  portfolio__subtitle: Cool stuff people pay me to do, talks and workshops, personal projects
+  portfolio__gallery:
+
+    - image: /images/work/gfs-directory.png
+      title: Community Tools
+      description: A digital roster to help people connect
+      client: Google for Startups
+      industry: Community Management
+      url: /work/gfs-directory
+
+    - image: /images/work/no-more-haters.png
+      title: No More Haters
+      description: Games to fight hate speech and fake news
+      client: maldita.es
+      client-logo: https://miro.medium.com/max/844/1*v2mrZKEqqY80h0KpUIr-4Q.jpeg
+      industry: NGO
+      url: /work/no-more-haters
+
+    - image: /images/work/poin.png
+      title: POiN Places
+      description: A city guide for families
+      client: POiN
+      industry: Family and leisure
+      url: /work/poin
+
+    - image: /images/work/giv.png
+      title: GIV.
+      description: Each payment, a charitable contribution
+      client: Donna Nairi
+      industry: Fintech
+      url: /work/giv
+
+    - image: /images/work/trenlab.png
+      title: Trenlab Trivia
+      description: Games to drive engagement
+      client: Wayra
+      industry: 
+      url: /work/trenlab
+
+
+#-------------------------------
+# Projects
+projects:
+  project__list:
+
+    - image: /images/sacred-video.png
+      title: Free the Fish
+      description: I shooted and edited this video for Sacred Wolves and had a lot of fun.
+      tags: video
+      url: https://www.youtube.com/watch?v=zegNRk_BLoo
+
+
+#-------------------------------
+# Now Settings
+now:
+  now__title: Now
+  now__subtitle: test
+  now__content:
+    - image: /images/community-tools.png
+      title: 👷‍♂️
+      description: Building <strong>Community Tools</strong> to help people connect in communities in Madrid, Tel Aviv and Seoul.
+      url: https://communitytools.co/
+      cta: More like Commu-nice-ty Tools
+
+    - image: /images/gallery-01.jpg
+      title: 🎮
+      description: Developing a game called <strong>Trash Slayer</strong>. Learning to use Unity is a real pain in the ass.
+      cta: Player 1 Press Start
+
+
+#-------------------------------
+# Subscribe Settings
+mailchimp:
+  mailchimp__title: Get updates and digital art inspiration # Add your Title
+  mailchimp__identifier: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+  mailchimp__button__text: Subscribe # Add your button text.
+  mailchimp__bg__color: "#f2eef8" # To change the color of the figure, add a hexadecimal color code (HEX). For example - "#f2eef8" (You can generate any color here - https://htmlcolorcodes.com/).
+
+
+#-------------------------------
+# Footer Settings
+social:
+# - {icon: "ion-logo-twitter", color: "#55acee", label: Twitter, link: "https://twitter.com/ivoriginal"}
+# - {icon: "ion-logo-twitter", color: "#55acee", label: Slides, link: "https://twitter.com/ivoriginal"}
+# - {icon: "ion-logo-facebook", color: "#3b5999", label: Facebook, link: "https://facebook.com"}
+# - {icon: "ion-logo-pinterest", color: "#bd081c", label: Pinterest, link: "https://pinterest.com"}
+# - {icon: "ion-logo-dribbble", color: "#ea4c89", label: Dribbble, link: "https://dribbble.com"}
+# - {icon: "ion-logo-instagram", color: "#e4405f", label: Instagram, link: "https://instagram.com"}
+# - {icon: "ion ion-logo-vimeo", color: "#1393cd", label: Vimeo, link: "https://vimeo.com"}
+
+# Example of adding a new link to the footer section - {icon: "ion-logo-github", color: "#24292e, label: Github, link: "https://github.com"}
+# Other icons can be found at https://ionicons.com/v4/
+
+
+#-------------------------------
+# Contact Settings
+contact:
+  email: your@email.com # Add your email for contact form
+  description: Clancy comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want. # Add a description of your form.
+
+# NOTE
+# Clancy comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want.
+
+
+#-------------------------------
+# Comment Section (Disqus)
+
+disqus-identifier: anvodstudio-demo # add your shortname for Disqus Comment. For example anvodstudio-demo
+
+
+#-------------------------------
+# Google Analytics
+google-analytics: # Add your identifier. For example UA-99631805-1.

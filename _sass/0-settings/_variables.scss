@@ -1,0 +1,39 @@
+// *****************
+// Global Variables
+// *****************
+
+// Spaces
+$base-spacing-unit: 16px;
+
+// Border radius
+$global-radius: 4px;
+
+// Transition
+// $global-transition: all .35s;
+$global-transition: none;
+
+
+// *****************
+// Typography
+// *****************
+$base-font-size: 16px;
+$base-font-style: normal;
+$base-font-variant: normal;
+$base-font-weight: normal;
+$base-font-family: 'DM Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+$base-line-height: 1.5;
+
+// Headings
+$heading-font-weight: 700;
+$heading-font-family: 'Montserrat', Helvetica Neue, Helvetica, Arial, sans-serif;
+$heading-font-size: $base-font-size * 1.618;
+
+$font-size-h1: 5.063em;
+$font-size-h2: 3.375em;
+$font-size-h3: 2.25em;
+$font-size-h4: 1.5em;
+$font-size-h5:  18px;
+$font-size-h6:  16px;
+
+$heading-line-height: 1.3;
+$heading-letter-spacing: -1px;

@@ -1,0 +1,36 @@
+<!-- begin blog -->
+<section class="blog section">
+
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="section__info">
+          <!-- <div class="avatar-2">
+            <img src="/images/ivosaurio-outline.png" />
+          </div> -->
+          <div class="section__head">
+            <span class="section-head">
+              <h2 class="section__title" style="font-family: Georgia, 'Times New Roman', Times, serif">Inconexo</h2>
+              <a class="section__link" href="{{ '/blog' | relative_url }}">View all posts</a>
+            </span>
+            <p class="section__subtitle">Un blog sobre las movidas que me molan (en español)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      {% if site.posts.size > 0 %}
+        {% for post in site.posts offset:0 limit:3 %}
+          <div class="col-4 col-m-12">
+            {% include article.html %}
+          </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+
+</section>
+<!-- end blog -->

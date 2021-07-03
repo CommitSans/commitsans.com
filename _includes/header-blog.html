@@ -1,0 +1,35 @@
+<!-- begin header -->
+<header class="header-blog">
+  <div class="container">
+    <div class="row">
+      <div class="header__inner col col-12">
+        <div class="logo">
+          <a class="logo__link" href="{{ site.baseurl }}/" style="font-family: Georgia, 'Times New Roman', Times, serif">
+          {% if site.data.settings.logo %}
+            <img class="logo__image" src="{{ site.baseurl }}{{ site.data.settings.logo }}" alt="{{ site.data.settings.title }}">
+          {% else %}
+            Inconexo
+          {% endif %}
+          </a>
+        </div>
+
+        <nav class="main-nav">
+            <ul class="nav__list list-reset">
+                <li class="nav__item">
+                  <a href="/about/" class="nav__link">¿Quién escribe aquí?</a>
+                </li>
+                <li class="nav__item">
+                  <a href="mailto:ivo@commitsans.com" class="button button--outline subscribe__button" id="membedded-subscribe" name="subscribe">Suscribirme</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- <div class="nav-button">
+          <i class="nav__icon nav__icon-menu ion ion-md-menu"></i>
+        </div> -->
+
+      </div>
+    </div>
+  </div>
+</header>
+<!-- end header -->

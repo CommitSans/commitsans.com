@@ -1,0 +1,23 @@
+{
+  "name": "iwebiginal",
+  "version": "1.0.0",
+  "description": "Clancy is an elegant portfolio theme for Jekyll designed for photographers, designers, illustrators, artists, creatives, etc. This theme will help you professionally introduce yourself to your visitors and showcase your work in a minimalistic style. This super clean and fully optimized theme can be easily customized to suit your needs.",
+  "main": "index.js",
+  "dependencies": {
+    "@material/tab-bar": "^11.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivoriginal/ivoriginal.github.io.git"
+  },
+  "author": "ivoriginal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivoriginal/ivoriginal.github.io/issues"
+  },
+  "homepage": "https://github.com/ivoriginal/ivoriginal.github.io#readme"
+}

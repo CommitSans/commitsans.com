@@ -1,0 +1,43 @@
+<!-- begin portfolio -->
+<section class="section portfolio">
+
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="section__info">
+          <div class="section__head">
+            <span class="section-head">
+              <!-- <h2 class="section__title">{{ site.data.settings.portfolio.portfolio__title }}</h2> -->
+              <h2 class="section__title">Portfolio</h2>
+              <a class="section__link" href="{{ '/work/#portfolio' | relative_url }}">View more</a>
+            </span>
+            <!-- <p class="section__subtitle">{{ site.data.settings.portfolio.portfolio__subtitle }}</p> -->
+            <p class="section__subtitle">Cool stuff people pay me to do</p>
+            <!-- <div class="portfolio__view">
+              <div class="portfolio__toggle">
+                <div class="icon">
+                  <div class="icon-bar"></div>
+                  <div class="icon-bar"></div>
+                  <div class="icon-bar"></div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio__gallery animate">
+    <div class="container">
+      <div class="row">
+        {% for card in site.data.settings.portfolio.portfolio__gallery limit:3 %}
+          {% include card.html %}
+        {% endfor %}
+      </div>
+      <hr style="margin-top: 56px;">
+    </div>
+  </div>
+
+</section>
+<!-- end portfolio -->

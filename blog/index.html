@@ -1,0 +1,35 @@
+---
+layout: blog
+title: El blog sobre diseño, urbanismo, autogestión y death metal
+description: 
+---
+
+{% include section-hero-blog.html %}
+
+<div class="container">
+  <div class="row animate">
+    <div class="row col col-9 col-m-12">
+      <h4 class="blog__title">Artículos</h4>
+      {% if site.posts.size > 0 %}
+        {% for post in paginator.posts %}
+          {% include article.html %}
+          <hr style="margin: 16px 0;">
+        {% endfor %}
+      {% endif %}
+    </div>
+    <div class="col col-3 col-m-12">
+      <h4 class="blog__title">Categorías</h4>
+      <div class="tags">
+        {% for tag in site.tags %}
+          {% assign t = tag | first %}
+          {% assign posts = tag | last %}
+          <div class="tag">{{t | downcase | replace:" ","-" }}</div>
+        {% endfor %}
+      </div>      
+    </div>
+  </div>
+</div>
+
+{% include pagination.html %}
+
+{% include section-subscribe.html %}
