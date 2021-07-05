@@ -1,9 +1,12 @@
 /* Hero */
 .hero {
-  background-color: #fafafa;
-  margin-bottom: 40px;
-  padding: 72px 0 56px 0;
-  border-bottom: 1px solid var(--medium-gray);
+  background-color: var(--background-color);
+  // margin-bottom: 40px;
+  // padding: 96px 0 56px 0;
+  padding: 124px 0 0;
+  // border-bottom: 1px solid var(--dark-gray);
+  text-align: left;
+  flex-direction: column;
 
   .hero__description a {
     // border-bottom: 2px solid var(--gray);
@@ -17,6 +20,10 @@
     text-align: center;
   }
 
+  hr {
+    margin-top: 56px;
+  }
+
   // 
   @media only screen and (min-width: $desktop) {
     // fixes space between text and button
@@ -27,12 +34,10 @@
 
   // 
   @media only screen and (max-width: $tablet) {
-
     // fixes space between text and button
     .button {
       margin-top: 56px;
     }
-
   }
 
   @media only screen and (max-width: $desktop) {
@@ -106,6 +111,9 @@
 // 
 .hero__inner {
 
+  display: flex;
+  align-self: center;
+
     p {
       line-height: 1.4;
     }
@@ -141,7 +149,7 @@
 // 
 .home__title {
 
-  margin-bottom: 1rem;
+  // margin-bottom: 1rem;
   font-size: 3rem;
   line-height: 1.2;
   color: var(--heading-font-color);

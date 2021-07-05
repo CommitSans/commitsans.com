@@ -6,7 +6,54 @@ permalink: /about/
 image: '/images/about/01.jpg'
 ---
 
-I really need to start writing my about page, but meanwhile, here are the key points you need to know about me:
-- I'm a designer
-- I'm very tall
-- I'm nice
+Commit Sans started as a thing and now it's another thing.
+
+<br />
+
+
+<div class="about">
+    <div class="portfolio__gallery animate mb-lg-2">
+        <div class="container">
+            <h3>Clients</h3>
+            <p>People and companies we've worked with</p>
+            <div class="row">
+                {% for card in site.data.settings.about.clients %}
+                    {% include card.html %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="portfolio__gallery animate mb-lg-2">
+        <div class="container">
+            <h3>The Core Team</h3>
+            <p>The foundations</p>
+            <div class="row">
+                {% for card in site.data.settings.about.core %}
+                    {% include card-horizontal.html %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="portfolio__gallery animate mb-lg-2">
+        <div class="container">
+            <h3>The Network</h3>
+            <p>People we work/have worked with</p>
+            <div class="row">
+                {% for card in site.data.settings.about.network %}
+                    {% include card.html %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="portfolio__gallery animate mb-lg-2">
+        <div class="container">
+            <h3>The Wishlist</h3>
+            <p>People we want to work with</p>
+            <div class="row">
+                {% for card in site.data.settings.about.wishlist %}
+                    {% include card.html %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

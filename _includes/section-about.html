@@ -8,11 +8,11 @@
           <div class="section__head">
             <span class="section-head">
               <!-- <h2 class="section__title">{{ site.data.settings.portfolio.portfolio__title }}</h2> -->
-              <h2 class="section__title">Portfolio</h2>
-              <a class="section__link" href="{{ '/work/#portfolio' | relative_url }}">View more</a>
+              <h2 class="section__title">About us</h2>
+              <a class="section__link" href="{{ '/about' | relative_url }}">View more</a>
             </span>
             <!-- <p class="section__subtitle">{{ site.data.settings.portfolio.portfolio__subtitle }}</p> -->
-            <p class="section__subtitle">Cool stuff we've built</p>
+            <p class="section__subtitle">Commit for code, Sans for design</p>
             <!-- <div class="portfolio__view">
               <div class="portfolio__toggle">
                 <div class="icon">
@@ -31,10 +31,13 @@
   <div class="portfolio__gallery animate">
     <div class="container">
       <div class="row">
-        {% for card in site.data.settings.portfolio.portfolio__gallery limit:3 %}
-          {% include card.html %}
+        {% for card in site.data.settings.about.core %}
+          {% include card-horizontal.html %}
         {% endfor %}
       </div>
+      <!-- <div>
+        Carlos is a developer and I'm a designer. Our great grandparents were product designers back in the day. They met during WWII, killed a bunch of nazis and then decided to start their own design and development workshop.
+      </div> -->
       <hr style="margin-top: 56px;">
     </div>
   </div>

@@ -12,9 +12,9 @@ menu__settings:
   menu__items:
     - title: 'Home'
       url: '/'
-    - title: 'Now'
-      url: '/now/'
-    - title: 'Work'
+    # - title: 'Now'
+    #   url: '/now/'
+    - title: 'Portfolio'
       url: '/work/'
     # - title: 'Blog'
     #   url: '/blog/'
@@ -25,9 +25,56 @@ menu__settings:
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: Diseño y desarrollo integral de productos digitales
-  hero__description: Diseñamos y desarrollamos webs, apps para iOs y Android, PWAs y landing pages.
+  hero__title: "We're your TAAS <br />(Team as a Service)"
+  hero__description: We're a creative duo that designs and develops from <a href="https://en.wikipedia.org/wiki/Minimum_viable_product" taget="_blank">MVP</a> to <a href="https://productschool.com/blog/product-management-2/minimum-lovable-product/" taget="_blank">MLP</a>. Our network of collaborators helps with illustration, marketing and native app projects.
 
+
+#-------------------------------
+# About
+about: 
+  clients:
+
+    - image: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Google_for_Startups_logo.svg/1280px-Google_for_Startups_logo.svg.png
+      title: Google for Startups
+      url: 
+
+    - image: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Google_for_Startups_logo.svg/1280px-Google_for_Startups_logo.svg.png
+      title: maldita.es
+      url: 
+
+    - image: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Google_for_Startups_logo.svg/1280px-Google_for_Startups_logo.svg.png
+      title: POiN
+      url:
+
+    - image: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Google_for_Startups_logo.svg/1280px-Google_for_Startups_logo.svg.png
+      title: Pelican
+      url: 
+
+  core:
+
+    - image: /images/about/carlos.jpg
+      title: Carlos Hernández
+      description: The Code Guy
+      url: /about/carlos
+
+    - image: /images/about/carlos.jpg
+      title: Ivo Vilches
+      description: The Design Guy
+      url: /about/ivo
+
+  network:
+
+  - image: /images/about/carlos.jpg
+    title: Silvia Ferpal
+    description: The Code Guy
+    url: https://www.silviaferpal.com/
+
+  wishlist:
+
+  - image: /images/about/carlos.jpg
+    title: Obama
+    description: The Code Guy
+    url: /about/carlos
 
 #-------------------------------
 # Portfolio Settings

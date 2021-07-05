@@ -16,8 +16,8 @@
 
 
 .header, .header-blog {
-  background-color: #fafafa;
-  border-bottom: 1px solid #e0e0e0;
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--dark-gray);
   position: fixed;
   top: 0px;
   width: 100%;
@@ -275,10 +275,10 @@
   .main-nav {
     position: fixed;
     // height: 56px;
-    background: var(--light-gray);
+    background: var(--lighter-black);
     z-index: 4;
     left: 0;
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid var(--dark-gray);
     opacity: 1;
     visibility: visible;
     top: auto;
@@ -338,8 +338,8 @@
 }
 
 .tabs {
-  background-color: #fafafa;
-  border-bottom: 1px solid #e0e0e0;
+  background-color: inherit;
+  border-bottom: 1px solid var(--dark-gray);
   position: fixed;
   width: 100%;
   z-index: 999;
